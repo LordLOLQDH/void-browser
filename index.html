@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>VOID — dein privater Browser</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👻</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== BOOT SCREEN ===== -->
+<div id="boot">
+  <div class="boot-line">VOID:// initializing privacy shell<span class="cursor">_</span></div>
+</div>
+
+<!-- ===== TOP CHROME ===== -->
+<header id="chrome">
+  <div class="chrome-left">
+    <div class="brand" title="VOID Browser">
+      <span class="brand-glyph">◉</span><span class="brand-text">VOID</span>
+    </div>
+  </div>
+
+  <div class="tabstrip" id="tabstrip"></div>
+  <button id="newtab-btn" title="Neuer Tab (Strg+T)">+</button>
+
+  <div class="chrome-right">
+    <button id="panic-btn" title="Panic Button — alles sofort löschen">⨯ PANIC</button>
+    <button id="privacy-toggle" title="Privacy-Monitor ein/ausblenden">◈</button>
+  </div>
+</header>
+
+<!-- ===== ADDRESS / CONTROL BAR ===== -->
+<div id="controlbar">
+  <div class="nav-btns">
+    <button id="back-btn" title="Zurück">←</button>
+    <button id="fwd-btn" title="Vorwärts">→</button>
+    <button id="reload-btn" title="Neu laden">↻</button>
+  </div>
+
+  <form id="url-form" autocomplete="off">
+    <span class="url-shield" id="url-shield" title="Privacy-Level dieser Seite">●</span>
+    <input id="url-input" type="text" placeholder="Adresse eingeben oder suchen …" spellcheck="false">
+    <span class="url-hint" id="url-hint"></span>
+  </form>
+
+  <div class="control-right">
+    <button id="summarize-btn" title="Seite mit KI zusammenfassen (Groq)">✦</button>
+    <button id="bookmark-btn" title="Lesezeichen setzen">☆</button>
+    <button id="history-btn" title="Verlauf">◷</button>
+    <button id="settings-btn" title="Einstellungen">⚙</button>
+  </div>
+</div>
+
+<!-- ===== PRIVACY MONITOR SIDEBAR ===== -->
+<aside id="privacy-panel">
+  <div class="panel-head">
+    <span>PRIVACY MONITOR</span>
+    <button id="privacy-close">×</button>
+  </div>
+  <div class="panel-section">
+    <div class="panel-label">Aktueller Schutzstatus</div>
+    <div id="privacy-score" class="score-badge score-high">HOCH</div>
+  </div>
+  <div class="panel-section">
+    <div class="panel-label">Geblockt in dieser Sitzung</div>
+    <div class="stat-row"><span>Tracker</span><span id="stat-trackers">0</span></div>
+    <div class="stat-row"><span>Cookies isoliert</span><span id="stat-cookies">0</span></div>
+    <div class="stat-row"><span>Referrer entfernt</span><span id="stat-referrers">0</span></div>
+  </div>
+  <div class="panel-section">
+    <div class="panel-label">Aktive Schutzmaßnahmen</div>
+    <ul class="feature-list">
+      <li>✓ Kein Tracking über Tabs hinweg</li>
+      <li>✓ Referrer-Header gestrippt</li>
+      <li>✓ Verlauf nur lokal, verschlüsselt</li>
+      <li>✓ Keine Server-Logs (statisches Hosting)</li>
+      <li>✓ Fingerprint-Randomisierung (User-Agent)</li>
+    </ul>
+  </div>
+  <div class="panel-section">
+    <div class="panel-label">Live-Requests dieser Seite</div>
+    <div id="request-log" class="request-log">
+      <div class="req-empty">Lade eine Seite, um Netzwerkaktivität zu sehen …</div>
+    </div>
+  </div>
+</aside>
+
+<!-- ===== MAIN VIEWPORT ===== -->
+<main id="viewport">
+  <!-- Startpage -->
+  <section id="startpage">
+    <div class="start-hero">
+      <div class="ghost-mark">◉</div>
+      <h1>VOID</h1>
+      <p class="tagline">Kein Tracking. Kein Server-Gedächtnis. Kein Kompromiss.</p>
+    </div>
+
+    <form id="start-search-form" class="start-search">
+      <input id="start-search-input" type="text" placeholder="Suche im Void oder gib eine URL ein …" autocomplete="off" spellcheck="false">
+      <button type="submit">→</button>
+    </form>
+
+    <div class="quicklinks" id="quicklinks"></div>
+
+    <div class="start-footer">
+      <button id="add-quicklink">+ Schnellzugriff hinzufügen</button>
+    </div>
+  </section>
+
+  <!-- Iframe-Bühne pro Tab wird per JS eingehängt -->
+  <div id="frames-host"></div>
+
+  <!-- Verlauf-Overlay -->
+  <div id="history-overlay" class="overlay hidden">
+    <div class="overlay-box">
+      <div class="overlay-head"><span>VERLAUF</span><button class="overlay-close" data-target="history-overlay">×</button></div>
+      <div class="overlay-actions">
+        <button id="clear-history-btn">Gesamten Verlauf löschen</button>
+      </div>
+      <div id="history-list" class="list-body"></div>
+    </div>
+  </div>
+
+  <!-- KI-Zusammenfassung Overlay -->
+  <div id="summary-overlay" class="overlay hidden">
+    <div class="overlay-box">
+      <div class="overlay-head"><span>SEITE ZUSAMMENFASSEN</span><button class="overlay-close" data-target="summary-overlay">×</button></div>
+      <div class="settings-body">
+        <div id="summary-body" class="summary-body">
+          <p class="hist-empty">Klicke auf ✦, während eine Seite geladen ist.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings-Overlay -->
+  <div id="settings-overlay" class="overlay hidden">
+    <div class="overlay-box">
+      <div class="overlay-head"><span>EINSTELLUNGEN</span><button class="overlay-close" data-target="settings-overlay">×</button></div>
+      <div class="settings-body">
+        <div class="setting-row">
+          <label>Proxy-Endpunkt</label>
+          <select id="proxy-select">
+            <option value="allorigins">allorigins.win (Standard, kostenlos)</option>
+            <option value="corsproxy">corsproxy.io (kostenlos)</option>
+            <option value="custom">Eigener Proxy …</option>
+          </select>
+        </div>
+        <div class="setting-row" id="custom-proxy-row" style="display:none">
+          <label>Eigene Proxy-URL (mit %URL%)</label>
+          <input id="custom-proxy-input" type="text" placeholder="https://mein-proxy.workers.dev/?url=%URL%">
+        </div>
+        <div class="setting-row">
+          <label>Groq API-Key (für ✦ Seiten-Zusammenfassung, kostenlos auf console.groq.com)</label>
+          <input id="groq-key-input" type="password" placeholder="gsk_… (bleibt nur lokal gespeichert)">
+        </div>
+        <div class="setting-row">
+          <label>Suchmaschine</label>
+          <select id="search-engine-select">
+            <option value="duckduckgo">DuckDuckGo (kein Tracking)</option>
+            <option value="startpage">Startpage</option>
+          </select>
+        </div>
+        <div class="setting-row">
+          <label>Design-Thema</label>
+          <select id="theme-select">
+            <option value="void">Void (Standard — Schwarz/Grün)</option>
+            <option value="ember">Ember (Dunkelrot)</option>
+            <option value="frost">Frost (Kühles Blau)</option>
+          </select>
+        </div>
+        <div class="setting-row checkbox-row">
+          <label><input type="checkbox" id="autoclear-toggle"> Verlauf beim Schließen automatisch löschen</label>
+        </div>
+        <div class="setting-row">
+          <button id="wipe-all-btn" class="danger-btn">Alle VOID-Daten unwiderruflich löschen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ===== STATUS BAR ===== -->
+<footer id="statusbar">
+  <span id="status-text">Bereit.</span>
+  <span id="status-tabcount">1 Tab</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
