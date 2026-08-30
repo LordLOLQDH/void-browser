@@ -409,7 +409,7 @@
           'Authorization': `Bearer ${key}`,
         },
         body: JSON.stringify({
-          model: 'llama-3.1-8b-instant',
+          model: 'openai/gpt-oss-20b',
           messages: [{ role: 'user', content: promptText }],
           max_tokens: 400,
         }),
@@ -423,7 +423,7 @@
       const data = await res.json();
       const summary = data.choices?.[0]?.message?.content?.trim() || 'Keine Zusammenfassung erhalten.';
       body.innerHTML = `<p>${escapeHTML(summary).replace(/\n/g, '<br>')}</p>
-        <div class="summary-meta">Quelle: ${escapeHTML(tab.url)} · via Groq (llama-3.1-8b-instant)${pageText ? '' : ' · Inhalt nicht auslesbar, Einschätzung basiert nur auf der URL'}</div>`;
+        <div class="summary-meta">Quelle: ${escapeHTML(tab.url)} · via Groq (gpt-oss-20b)${pageText ? '' : ' · Inhalt nicht auslesbar, Einschätzung basiert nur auf der URL'}</div>`;
     } catch (err) {
       body.innerHTML = `<p class="summary-error">Zusammenfassung fehlgeschlagen: ${escapeHTML(err.message)}</p>`;
     }
