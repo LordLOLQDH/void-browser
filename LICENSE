@@ -1,54 +1,107 @@
-# VOID Browser License
+VOID BROWSER LICENSE
 
-Copyright © 2026 LordLOLQDH. Alle Rechte vorbehalten, soweit in dieser Lizenz nicht ausdrücklich anders geregelt.
+Copyright © 2026 LordLOLQDH
+VOID Browser
 
-## 1. Erlaubte Nutzung
+════════════════════════════════════════════════════════════
 
-Du darfst VOID Browser kostenlos verwenden, kopieren, für private oder kommerzielle Zwecke nutzen, verändern, weiterentwickeln, veröffentlichen und weitergeben.
+1. ERLAUBTE NUTZUNG
 
-## 2. Namensnennung
+VOID Browser darf kostenlos verwendet, kopiert, verändert,
+weiterentwickelt, veröffentlicht und weitergegeben werden.
 
-Bei jeder Weitergabe des ursprünglichen Projekts oder einer daraus abgeleiteten Version muss dieser Hinweis erhalten bleiben:
+Die Nutzung ist sowohl für private als auch für kommerzielle
+Zwecke erlaubt.
 
-> Copyright © 2026 LordLOLQDH — VOID Browser
+Du darfst eigene Funktionen hinzufügen und eigene Versionen
+erstellen.
 
-Außerdem muss auf das ursprüngliche Projekt verwiesen werden:
+════════════════════════════════════════════════════════════
 
-> Originalprojekt: https://github.com/LordLOLQDH/void-browser
+2. COPYRIGHT UND NAMENSNENNUNG
 
-Bei einer veränderten Version darfst du deinen eigenen Namen als Bearbeiter nennen. Es muss jedoch weiterhin klar erkennbar sein, dass VOID Browser ursprünglich von **LordLOLQDH** erstellt wurde.
+Das folgende Copyright muss bei der Weitergabe des Projekts
+oder einer daraus abgeleiteten Version erhalten bleiben:
 
-## 3. Keine falsche Urheberschaft
+    Copyright © 2026 LordLOLQDH — VOID Browser
 
-Du darfst nicht behaupten oder den Eindruck erwecken, dass du der ursprüngliche Erfinder, Autor oder alleinige Urheber von VOID Browser bist.
+Zusätzlich muss auf das ursprüngliche Projekt verwiesen werden:
 
-Du darfst insbesondere eine unveränderte oder nur geringfügig veränderte Version nicht als deine eigene Erfindung ausgeben oder den ursprünglichen Autor aus den erhaltenen Copyright- und Lizenzhinweisen entfernen.
+    Originalprojekt:
+    https://github.com/LordLOLQDH/void-browser
 
-Eigene Änderungen und Erweiterungen dürfen selbstverständlich als deine eigene Arbeit gekennzeichnet werden.
+Auch bei einer veränderten Version muss eindeutig erkennbar
+bleiben, dass VOID Browser ursprünglich von LordLOLQDH erstellt
+wurde.
 
-## 4. Änderungen
+════════════════════════════════════════════════════════════
 
-Bei der Weitergabe einer veränderten Version soll deutlich darauf hingewiesen werden, dass sie modifiziert wurde.
+3. KEINE FALSCHE URHEBERSCHAFT
+
+Niemand darf behaupten oder den Eindruck erwecken, VOID Browser
+selbst erfunden oder ursprünglich erstellt zu haben, wenn dies
+nicht der Fall ist.
+
+Insbesondere ist es nicht erlaubt:
+
+• den ursprünglichen Autor als eigenen Autor auszugeben;
+• eine unveränderte Version als eigene Erfindung zu präsentieren;
+• den Copyright-Hinweis absichtlich zu entfernen;
+• die ursprüngliche Herkunft des Projekts zu verschleiern.
+
+Eigene Änderungen, Erweiterungen und neue Funktionen dürfen
+selbstverständlich als eigene Arbeit gekennzeichnet werden.
+
+════════════════════════════════════════════════════════════
+
+4. VERÄNDERTE VERSIONEN
+
+Wenn VOID Browser verändert und anschließend weitergegeben wird,
+muss deutlich gemacht werden, dass es sich um eine veränderte
+Version handelt.
 
 Beispiel:
 
-> VOID Browser — ursprüngliches Projekt von LordLOLQDH.  
-> Modifiziert und erweitert von [Name].
+    VOID Browser
+    Ursprüngliches Projekt von LordLOLQDH.
+    Modifiziert und erweitert von [Name].
 
-## 5. Logo und Branding
+════════════════════════════════════════════════════════════
 
-Das VOID-Browser-Logo, der Name „VOID Browser“ und andere Branding-Elemente dürfen nicht so verwendet werden, dass der Eindruck entsteht, eine modifizierte Version sei offiziell von LordLOLQDH veröffentlicht oder unterstützt.
+5. LOGO UND BRANDING
 
-## 6. Keine Garantie
+Das VOID-Browser-Logo, der Name „VOID Browser“ und andere
+offizielle Branding-Elemente dürfen nicht so verwendet werden,
+dass der Eindruck entsteht, eine veränderte Version sei offiziell
+von LordLOLQDH veröffentlicht, genehmigt oder unterstützt worden.
 
-VOID Browser wird „wie besehen“ ohne ausdrückliche oder stillschweigende Garantie bereitgestellt. Die Nutzung erfolgt auf eigene Verantwortung.
+Die Erlaubnis zur Veränderung des Quellcodes bedeutet nicht
+automatisch eine Übertragung der Rechte an Logo oder Branding.
 
-## 7. Geltungsbereich
+════════════════════════════════════════════════════════════
 
-Diese Lizenz gilt für den von LordLOLQDH veröffentlichten VOID-Browser-Code, soweit einzelne Dateien oder Bestandteile nicht ausdrücklich unter einer anderen Lizenz stehen oder Rechte Dritter betroffen sind.
+6. KEINE GARANTIE
 
----
+VOID Browser wird ohne ausdrückliche oder stillschweigende
+Garantie bereitgestellt.
 
-**Copyright © 2026 LordLOLQDH — VOID Browser**
+Die Nutzung der Software erfolgt auf eigene Verantwortung.
 
-Originalprojekt: https://github.com/LordLOLQDH/void-browser
+════════════════════════════════════════════════════════════
+
+7. GELTUNGSBEREICH
+
+Diese Lizenz gilt für den von LordLOLQDH veröffentlichten
+VOID-Browser-Code, soweit einzelne Dateien oder Bestandteile
+nicht ausdrücklich einer anderen Lizenz unterliegen oder Rechte
+Dritter betroffen sind.
+
+════════════════════════════════════════════════════════════
+
+COPYRIGHT © 2026 LORDLOLQDH — VOID BROWSER
+
+Originalprojekt:
+https://github.com/LordLOLQDH/void-browser
+
+© 2026 LordLOLQDH. Alle Rechte vorbehalten, soweit diese Lizenz
+ausdrücklich keine Nutzung erlaubt.
