@@ -4,9 +4,9 @@
 
 # VOID Browser
 
-### A privacy-focused browser interface built for the web.
+### Eine datenschutzorientierte Browser-Oberfläche für das Web.
 
-**Fast · Dark · Private · Local-first**
+**Schnell · Dunkel · Privat · Local-first**
 
 [![GitHub](https://img.shields.io/badge/GitHub-LordLOLQDH-181717?logo=github)](https://github.com/LordLOLQDH/void-browser)
 [![GitHub Stars](https://img.shields.io/github/stars/LordLOLQDH/void-browser?style=flat&logo=github)](https://github.com/LordLOLQDH/void-browser/stargazers)
@@ -20,76 +20,76 @@
 
 <br>
 
-**[Open VOID Browser](https://lordlolqdh.github.io/void-browser/)** · **[View Source](https://github.com/LordLOLQDH/void-browser)**
+**[VOID Browser öffnen](https://lordlolqdh.github.io/void-browser/)** · **[Quellcode ansehen](https://github.com/LordLOLQDH/void-browser)**
 
 </div>
 
 ---
 
-## What is VOID?
+## Was ist VOID?
 
-**VOID Browser** is a browser-style web application that runs entirely from a static website. It provides a familiar browsing interface with tabs, navigation, search, bookmarks, history, themes and a privacy-focused control panel — without requiring a dedicated VOID backend.
+**VOID Browser** ist eine browserähnliche Webanwendung, die vollständig als statische Website ausgeführt werden kann. Sie bietet eine vertraute Oberfläche mit Tabs, Navigation, Suche, Lesezeichen, Verlauf, Themes und einem datenschutzorientierten Kontrollbereich – ohne ein eigenes VOID-Backend zu benötigen.
 
-> **Important:** VOID is a web application, not a replacement for Chrome, Safari, Firefox or another native browser. A website cannot provide its own full rendering engine, TCP/TLS stack or unrestricted network interception. VOID works within normal browser security boundaries and uses proxy-based page loading where required.
+> **Wichtig:** VOID ist eine Webanwendung und kein Ersatz für Chrome, Safari, Firefox oder einen anderen nativen Browser. Eine Website kann keine eigene vollständige Rendering-Engine, keinen eigenen TCP/TLS-Stack und keine uneingeschränkte Netzwerküberwachung bereitstellen. VOID arbeitet innerhalb der normalen Sicherheitsgrenzen des Browsers und verwendet bei Bedarf Proxy-basiertes Laden von Webseiten.
 
 ---
 
-## ✦ Highlights
+## ✦ Funktionen
 
-| Feature | Description |
+| Funktion | Beschreibung |
 |---|---|
-| 🗂️ **Multi-tab browsing** | Open, switch, reload and close tabs with independent navigation state. |
-| ◀️ **Back / Forward** | Navigate through the history of each tab. |
-| 🔎 **Smart address bar** | URLs are opened directly; other input is treated as a search query. |
-| 🏠 **Custom start page** | Quick-access tiles and a clean VOID dashboard. |
-| 🔖 **Bookmarks** | Save frequently visited pages locally. |
-| 🕘 **History** | Keep browsing history on the device. |
-| 🛡️ **Privacy Monitor** | Privacy-focused status panel with protection information and request activity. |
-| ⚡ **Panic Button** | Quickly clears locally stored VOID data and reloads the application. |
-| 🔐 **Local encryption** | Sensitive local data is protected with AES-256-GCM where supported by the app. |
-| 🧩 **Sandboxed tabs** | Pages are loaded in sandboxed iframes with a restrictive browser policy. |
-| 🚫 **Referrer stripping** | Frames use `no-referrer` to reduce referrer leakage. |
-| 🎨 **3 themes** | Void, Ember and Frost. |
-| ✦ **AI summaries** | Optional Groq-powered page summaries. |
-| 📱 **PWA-ready icons** | Favicons, Apple touch icon and Android Chrome icons are included. |
-| 💻 **Keyboard shortcuts** | Desktop shortcuts for tabs, closing tabs and focusing the address bar. |
+| 🗂️ **Browsing mit mehreren Tabs** | Tabs öffnen, wechseln, neu laden und schließen – jeweils mit eigenständigem Navigationsstatus. |
+| ◀️ **Zurück / Vorwärts** | Durch den Verlauf des jeweiligen Tabs navigieren. |
+| 🔎 **Intelligente Adressleiste** | URLs werden direkt geöffnet; andere Eingaben werden als Suchanfrage behandelt. |
+| 🏠 **Individuelle Startseite** | Schnellzugriff-Kacheln und ein übersichtliches VOID-Dashboard. |
+| 🔖 **Lesezeichen** | Häufig besuchte Seiten lokal speichern. |
+| 🕘 **Verlauf** | Browserverlauf auf dem Gerät speichern. |
+| 🛡️ **Datenschutz Monitor** | Datenschutzorientiertes Statuspanel mit Schutzinformationen und Anfrageaktivität. |
+| ⚡ **Panic Button** | Lokal gespeicherte VOID-Daten schnell löschen und die Anwendung neu laden. |
+| 🔐 **Lokale Verschlüsselung** | Sensible lokale Daten werden, sofern von der Anwendung unterstützt, mit AES-256-GCM geschützt. |
+| 🧩 **Sandboxed Tabs** | Seiten werden in Sandbox-Iframes mit restriktiven Browser-Richtlinien geladen. |
+| 🚫 **Referrer-Schutz** | Frames verwenden `no-referrer`, um die Weitergabe von Referrer-Informationen zu reduzieren. |
+| 🎨 **3 Themes** | Void, Ember und Frost. |
+| ✦ **KI-Zusammenfassungen** | Optionale, von Groq unterstützte Seitenzusammenfassungen. |
+| 📱 **PWA-fähige Icons** | Favicons, Apple-Touch-Icon und Android-Chrome-Icons sind enthalten. |
+| 💻 **Tastenkürzel** | Tastenkürzel für Tabs, das Schließen von Tabs und das Fokussieren der Adressleiste. |
 
 ---
 
-## 🛡️ Privacy & Security
+## 🛡️ Datenschutz & Sicherheit
 
-VOID is designed around a **local-first** architecture.
+VOID basiert auf einer **Local-first**-Architektur.
 
-### What stays local
+### Was lokal bleibt
 
-- Browser settings
+- Browsereinstellungen
 - Bookmarks
 - History
-- Local preferences
-- Encryption material used by the application
-- Groq API key, when configured
+- Lokale Einstellungen
+- Von der Anwendung verwendete Verschlüsselungsdaten
+- Groq-API-Schlüssel, sofern eingerichtet
 
-VOID itself does not operate a central server or database for your browsing history.
+VOID selbst betreibt keinen zentralen Server und keine zentrale Datenbank für deinen Browserverlauf.
 
-### Protection features
+### Schutzfunktionen
 
 - **Sandboxed iframes** for loaded pages
 - **No-referrer policy** on browsing frames
 - Local storage for user data
 - AES-256-GCM encryption for supported sensitive local data
-- Panic Button for clearing local application data
+- Panic Button zum Löschen lokaler Anwendungsdaten
 
-### Privacy Monitor — important limitation
+### Privacy Monitor – wichtige Einschränkung
 
-The Privacy Monitor is partly a **visual representation of the protection concept**.
+Der Privacy Monitor ist teilweise eine **visuelle Darstellung des Schutzkonzepts**.
 
-A normal web page cannot inspect all network traffic like a native browser extension or browser engine. Therefore, tracker/cookie counters shown by VOID should **not** be interpreted as forensic network-level blocking statistics.
+Eine normale Webseite kann nicht den gesamten Netzwerkverkehr wie eine native Browser-Erweiterung oder Browser-Engine untersuchen. Daher sollten von VOID angezeigte Tracker-/Cookie-Zähler **nicht** als forensische Netzwerk- oder Blockierungsstatistiken verstanden werden.
 
-The architectural protections listed above are real; the simulated/visualized counters are intentionally presented as UI information rather than proof of complete network blocking.
+Die oben genannten architektonischen Schutzmaßnahmen sind real; simulierte bzw. visualisierte Zähler dienen bewusst als UI-Information und nicht als Nachweis einer vollständigen Netzwerkblockierung.
 
 ---
 
-## 🌐 How page loading works
+## 🌐 So funktioniert das Laden von Webseiten
 
 GitHub Pages can only serve static files. VOID therefore cannot behave like a complete browser engine.
 
@@ -98,7 +98,7 @@ When a target website permits it, VOID can load it through an external CORS-comp
 `allorigins.win`  
 `corsproxy.io`
 
-Some websites will still refuse to load because of:
+Einige Webseiten können trotzdem das Laden verweigern, beispielsweise wegen:
 
 - `X-Frame-Options`
 - Content Security Policy
@@ -108,47 +108,47 @@ Some websites will still refuse to load because of:
 - Cross-origin browser security
 - Websites that deliberately reject proxy traffic
 
-This is a technical limitation of running a browser interface as a web application — not a bug that can always be solved in frontend JavaScript.
+Das ist eine technische Einschränkung einer Browser-Oberfläche als Webanwendung – kein Fehler, der sich immer mit Frontend-JavaScript beheben lässt.
 
 ---
 
-## ☁️ Optional: Use your own Cloudflare Worker proxy
+## ☁️ Optional: Eigenen Cloudflare-Worker-Proxy verwenden
 
-For more control and reliability, VOID includes `worker.js`, which can be deployed as a Cloudflare Worker.
+Für mehr Kontrolle und Zuverlässigkeit enthält VOID `worker.js`, das als Cloudflare Worker bereitgestellt werden kann.
 
-### Setup
+### Einrichtung
 
-1. Open the Cloudflare dashboard.
-2. Go to **Workers & Pages**.
-3. Create a Worker.
-4. Paste the contents of `worker.js`.
-5. Deploy it.
-6. Copy your Worker URL.
+1. Cloudflare-Dashboard öffnen.
+2. Zu **Workers & Pages** wechseln.
+3. Einen Worker erstellen.
+4. Den Inhalt von `worker.js` einfügen.
+5. Den Worker bereitstellen.
+6. Die Worker-URL kopieren.
 7. Open **VOID → Settings → Proxy Endpoint**.
-8. Select **Custom Proxy**.
-9. Enter your endpoint using:
+8. **Custom Proxy** auswählen.
+9. Den Endpoint im folgenden Format eintragen:
 
 ```text
 https://YOUR-WORKER.workers.dev/?url=%URL%
 ```
 
-The exact availability and limits of third-party services and Cloudflare's plans can change, so check their current documentation before deployment.
+Verfügbarkeit und Limits von Drittanbietern sowie Cloudflare-Tarife können sich ändern. Vor der Bereitstellung sollte daher die aktuelle Dokumentation geprüft werden.
 
 ---
 
-## ✦ Optional: AI page summaries with Groq
+## ✦ Optional: KI-Seitenzusammenfassungen mit Groq
 
-VOID can optionally generate short page summaries using the Groq API.
+VOID kann optional kurze Seitenzusammenfassungen über die Groq-API erzeugen.
 
 ### Setup
 
-1. Create a Groq API key.
-2. Open **VOID → Settings**.
-3. Enter the key under **Groq API Key**.
-4. Load a page.
-5. Press the **✦** button.
+1. Groq-API-Schlüssel erstellen.
+2. **VOID → Settings** öffnen.
+3. Den Schlüssel unter **Groq API Key** eintragen.
+4. Eine Seite laden.
+5. Den **✦**-Button drücken.
 
-The key is stored locally by VOID and is sent directly from the browser to Groq when the feature is used.
+Der Schlüssel wird von VOID lokal gespeichert und bei Verwendung der Funktion direkt vom Browser an Groq gesendet.
 
 > Cross-origin restrictions may prevent VOID from reading the actual content inside some sandboxed pages. In those cases, the AI feature may only be able to work with limited information such as the URL.
 
@@ -156,36 +156,36 @@ The key is stored locally by VOID and is sent directly from the browser to Groq 
 
 ## 🎨 Themes
 
-VOID currently includes three visual themes:
+VOID enthält derzeit drei visuelle Themes:
 
 ### VOID
-Dark black/green cyber interface.
+Dunkle Schwarz-/Grün-Cyber-Oberfläche.
 
 ### EMBER
-Dark interface with red/orange accents.
+Dunkle Oberfläche mit Rot-/Orange-Akzenten.
 
 ### FROST
-Dark interface with blue/cyan accents.
+Dunkle Oberfläche mit Blau-/Cyan-Akzenten.
 
-The themes are implemented in `style.css` and can be changed from the application settings.
+Die Themes sind in `style.css` implementiert und können in den Anwendungseinstellungen geändert werden.
 
 ---
 
-## ⌨️ Keyboard shortcuts
+## ⌨️ Tastenkürzel
 
-| Shortcut | Action |
+| Tastenkürzel | Aktion |
 |---|---|
-| `Ctrl/Cmd + T` | New tab |
-| `Ctrl/Cmd + W` | Close current tab |
-| `Ctrl/Cmd + L` | Focus address bar |
+| `Ctrl/Cmd + T` | Neuer Tab |
+| `Ctrl/Cmd + W` | Aktuellen Tab schließen |
+| `Ctrl/Cmd + L` | Adressleiste fokussieren |
 
-Touch and mouse interaction are supported through the web interface.
+Touch- und Mausbedienung werden von der Weboberfläche unterstützt.
 
 ---
 
-## 📱 Icons & branding
+## 📱 Icons & Branding
 
-VOID includes a complete favicon/app-icon setup:
+VOID enthält eine vollständige Favicon-/App-Icon-Konfiguration:
 
 - `favicon.ico`
 - `favicon-16x16.png`
@@ -195,21 +195,21 @@ VOID includes a complete favicon/app-icon setup:
 - `android-chrome-512x512.png`
 - `site.webmanifest`
 
-The same VOID logo is used throughout the README, browser branding and application interface.
+Dasselbe VOID-Logo wird in der README, im Browser-Branding und in der Anwendungsoberfläche verwendet.
 
 ---
 
-## 🚀 Run VOID locally
+## 🚀 VOID lokal ausführen
 
-No build system is required.
+Es ist kein Build-System erforderlich.
 
-### Option 1 — open directly
+### Option 1 – Direkt öffnen
 
-Download or clone the repository and open `index.html` in a modern browser.
+Repository herunterladen oder klonen und `index.html` in einem modernen Browser öffnen.
 
-### Option 2 — local web server
+### Option 2 – Lokaler Webserver
 
-For the most reliable behaviour, serve the project through a local HTTP server.
+Für zuverlässigeres Verhalten sollte das Projekt über einen lokalen HTTP-Server bereitgestellt werden.
 
 Example:
 
@@ -219,21 +219,21 @@ cd void-browser
 python3 -m http.server 8000
 ```
 
-Then open:
+Danach öffnen:
 
 `http://localhost:8000`
 
 ---
 
-## 🌍 Deploy with GitHub Pages
+## 🌍 Mit GitHub Pages bereitstellen
 
-1. Open the repository **Settings**.
-2. Select **Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the `main` branch.
-5. Select `/(root)`.
-6. Save.
-7. Wait for GitHub Pages to publish the site.
+1. Repository-**Settings** öffnen.
+2. **Pages** auswählen.
+3. Unter **Build and deployment** die Option **Deploy from a branch** auswählen.
+4. Den Branch `main` auswählen.
+5. `/(root)` auswählen.
+6. Speichern.
+7. Warten, bis GitHub Pages die Website veröffentlicht.
 
 Live version:
 
@@ -241,27 +241,27 @@ Live version:
 
 ---
 
-## 📁 Project structure
+## 📁 Projektstruktur
 
 ```text
 void-browser/
-├── index.html                  # Main application and UI
-├── style.css                   # UI, layout, themes and animations
-├── app.js                      # Tabs, navigation, storage and application logic
-├── worker.js                   # Optional Cloudflare Worker proxy
-├── favicon.ico                 # Main browser favicon
-├── favicon-16x16.png           # Small favicon
-├── favicon-32x32.png           # Standard favicon
-├── apple-touch-icon.png        # Apple device icon
-├── android-chrome-192x192.png  # Android/PWA icon
-├── android-chrome-512x512.png  # Large Android/PWA icon
-├── site.webmanifest             # Web app metadata
-└── README.md                   # Project documentation
+├── index.html                  # Hauptanwendung und UI
+├── style.css                   # UI, Layout, Themes und Animationen
+├── app.js                      # Tabs, Navigation, Speicherung und Anwendungslogik
+├── worker.js                   # Optionaler Cloudflare-Worker-Proxy
+├── favicon.ico                 # Haupt-Favicon
+├── favicon-16x16.png           # Kleines Favicon
+├── favicon-32x32.png           # Standard-Favicon
+├── apple-touch-icon.png        # Apple-Geräte-Icon
+├── android-chrome-192x192.png  # Android-/PWA-Icon
+├── android-chrome-512x512.png  # Großes Android-/PWA-Icon
+├── site.webmanifest             # Web-App-Metadaten
+└── README.md                   # Projektdokumentation
 ```
 
 ---
 
-## 🧠 Architecture
+## 🧠 Architektur
 
 ```text
                     ┌──────────────────────┐
@@ -273,7 +273,7 @@ void-browser/
               │                │                │
               ▼                ▼                ▼
         ┌───────────┐    ┌────────────┐   ┌─────────────┐
-        │   Tabs    │    │  Privacy   │   │ Local Data  │
+        │   Tabs    │    │  Privacy   │   │ Lokale Daten  │
         │ Navigation│    │   Monitor  │   │  & Storage  │
         └─────┬─────┘    └────────────┘   └─────────────┘
               │
@@ -284,103 +284,103 @@ void-browser/
                 │
                 ▼
        ┌─────────────────┐
-       │ Optional CORS   │
+       │ Optionaler CORS   │
        │      Proxy      │
        └────────┬────────┘
                 │
                 ▼
-          Target Website
+          Ziel-Website
 ```
 
-VOID's frontend, interface and local application logic run in the user's browser. External proxies are only used where the browser's normal cross-origin rules require them.
+Frontend, Oberfläche und lokale Anwendungslogik von VOID laufen im Browser des Nutzers. Externe Proxies werden nur dort verwendet, wo die normalen Cross-Origin-Regeln des Browsers dies erfordern.
 
 ---
 
-## 📦 Technology
+## 📦 Technologie
 
-- **HTML5** — application structure
-- **CSS3** — interface, themes and animations
-- **JavaScript (ES6+)** — application logic
-- **Web Storage** — local preferences and browser data
-- **Web Crypto API** — encryption support
-- **iframe sandboxing** — isolation of loaded pages
-- **GitHub Pages** — static hosting
-- **Cloudflare Workers** — optional custom proxy
-- **Groq API** — optional AI summaries
+- **HTML5** — Anwendungsstruktur
+- **CSS3** — Oberfläche, Themes und Animationen
+- **JavaScript (ES6+)** — Anwendungslogik
+- **Web Storage** — Lokale Einstellungen und Browserdaten
+- **Web Crypto API** — Verschlüsselungsunterstützung
+- **iframe sandboxing** — Isolation geladener Seiten
+- **GitHub Pages** — Statisches Hosting
+- **Cloudflare Workers** — Optionaler eigener Proxy
+- **Groq API** — Optionale KI-Zusammenfassungen
 
-No frontend framework or build step is required.
+Es wird kein Frontend-Framework und kein Build-Schritt benötigt.
 
 ---
 
-## ⚠️ Known limitations
+## ⚠️ Bekannte Einschränkungen
 
-VOID runs inside a normal browser tab, so it cannot provide all capabilities of a native browser.
+VOID läuft innerhalb eines normalen Browser-Tabs und kann daher nicht alle Funktionen eines nativen Browsers bereitstellen.
 
-Some websites may:
+Einige Webseiten können:
 
-- refuse to load inside an iframe;
-- block proxy traffic;
-- require authentication that does not work through a proxy;
-- break because of CSP or cross-origin restrictions;
-- rate-limit free proxy services.
+- das Laden innerhalb eines Iframes verweigern;
+- Proxy-Verkehr blockieren;
+- Authentifizierung verlangen, die über einen Proxy nicht funktioniert;
+- aufgrund von CSP- oder Cross-Origin-Einschränkungen nicht korrekt funktionieren;
+- kostenlose Proxy-Dienste limitieren.
 
-VOID also cannot provide true system-level tracker blocking, packet inspection, VPN functionality or a private network stack from a normal static webpage.
+VOID kann über eine normale statische Webseite außerdem keine echte systemweite Tracker-Blockierung, Paketinspektion, VPN-Funktionalität oder einen eigenen Netzwerk-Stack bereitstellen.
 
 ---
 
 ## 🗺️ Roadmap
 
-Possible future improvements:
+Mögliche zukünftige Verbesserungen:
 
-- [ ] More reliable page loading
-- [ ] Better mobile navigation
-- [ ] More theme customization
-- [ ] Improved bookmarks management
-- [ ] Import/export of settings and bookmarks
-- [ ] More privacy controls within browser capabilities
-- [ ] Improved PWA/mobile experience
-- [ ] Additional AI tools
-- [ ] More robust proxy fallback handling
-
----
-
-## 🤝 Contributing
-
-Contributions, bug reports and ideas are welcome.
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Make your changes.
-4. Test them locally.
-5. Open a pull request.
-
-For bugs, include:
-
-- What you expected
-- What happened instead
-- Browser and device
-- Steps to reproduce
-- Console errors, if available
+- [ ] Zuverlässigeres Laden von Webseiten
+- [ ] Bessere mobile Navigation
+- [ ] Mehr Theme-Anpassungen
+- [ ] Verbessertes Lesezeichen-Management
+- [ ] Import/Export von Einstellungen und Lesezeichen
+- [ ] Mehr Datenschutzkontrollen im Rahmen der Browser-Möglichkeiten
+- [ ] Verbesserte PWA-/Mobile-Erfahrung
+- [ ] Weitere KI-Werkzeuge
+- [ ] Robusteres Proxy-Fallback-Handling
 
 ---
 
-## 📜 License
+## 🤝 Mitmachen
 
-No license is currently declared in this repository.
+Beiträge, Fehlerberichte und Ideen sind willkommen.
 
-If you want others to legally reuse, modify or redistribute VOID, add an appropriate open-source license to the project.
+1. Repository forken.
+2. Feature-Branch erstellen.
+3. Änderungen vornehmen.
+4. Lokal testen.
+5. Pull Request erstellen.
+
+Bei Fehlern bitte angeben:
+
+- Was erwartet wurde
+- Was stattdessen passiert ist
+- Browser und Gerät
+- Schritte zur Reproduktion
+- Konsolenfehler, falls vorhanden
 
 ---
 
-## 👤 Project
+## 📜 Lizenz
+
+In diesem Repository ist derzeit keine Lizenz festgelegt.
+
+Wenn andere VOID rechtmäßig wiederverwenden, verändern oder weiterverbreiten können sollen, sollte dem Projekt eine passende Open-Source-Lizenz hinzugefügt werden.
+
+---
+
+## 👤 Projekt
 
 **VOID Browser**  
-Created by **LordLOLQDH**
+Erstellt von **LordLOLQDH**
 
 Repository:  
 https://github.com/LordLOLQDH/void-browser
 
-Live application:  
+Live-Anwendung:  
 https://lordlolqdh.github.io/void-browser/
 
 ---
@@ -391,6 +391,6 @@ https://lordlolqdh.github.io/void-browser/
 
 ### VOID
 
-**Private by design. Built for the web.**
+**Privat entwickelt. Für das Web gebaut.**
 
 </div>
