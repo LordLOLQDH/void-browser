@@ -97,8 +97,8 @@ body{
   height:40px;
 }
 .chrome-left{ display:flex; align-items:center; }
-.brand{ display:flex; align-items:center; gap:6px; padding:0 10px; user-select:none; }
-.brand-glyph{ color:var(--accent); font-size:14px; text-shadow:0 0 8px var(--accent-glow); }
+.brand{ display:flex; align-items:center; gap:7px; padding:0 10px; user-select:none; }
+.brand-logo{ width:24px; height:24px; object-fit:contain; display:block; filter:drop-shadow(0 0 5px var(--accent-glow)); }
 .brand-text{ font-family:var(--display); font-weight:700; letter-spacing:3px; font-size:13px; color:var(--text-hi); }
 
 .tabstrip{
@@ -206,7 +206,8 @@ body{
 }
 .start-hero{ text-align:center; }
 .ghost-mark{
-  font-size:48px; color:var(--accent); text-shadow:0 0 30px var(--accent-glow);
+  width:92px; height:92px; object-fit:contain; display:block; margin:0 auto;
+  filter:drop-shadow(0 0 22px var(--accent-glow));
   animation:pulse 3s ease-in-out infinite;
 }
 @keyframes pulse{ 0%,100%{ opacity:.8; } 50%{ opacity:1; text-shadow:0 0 50px var(--accent-glow);} }
