@@ -364,11 +364,18 @@ Bei Fehlern bitte angeben:
 
 ---
 
-## 📜 Lizenz
+## 📜 Lizenz & Copyright
 
-In diesem Repository ist derzeit keine Lizenz festgelegt.
+**Copyright © 2026 LordLOLQDH — VOID Browser**
 
-Wenn andere VOID rechtmäßig wiederverwenden, verändern oder weiterverbreiten können sollen, sollte dem Projekt eine passende Open-Source-Lizenz hinzugefügt werden.
+VOID darf kostenlos verwendet, kopiert, verändert und weiterentwickelt werden. Auch die Veröffentlichung und Weitergabe eigener veränderter Versionen ist erlaubt.
+
+Bei der Weitergabe muss der ursprüngliche Copyright-Hinweis erhalten bleiben und klar erkennbar sein, dass **VOID Browser ursprünglich von LordLOLQDH erstellt wurde**.
+
+Eigene Änderungen dürfen als eigene Arbeit gekennzeichnet werden. Es darf jedoch nicht behauptet werden, dass VOID Browser ursprünglich selbst erfunden oder erstellt wurde.
+
+Das vollständige Lizenzdokument findest du in [LICENSE](LICENSE).
+
 
 ---
 
@@ -391,6 +398,8 @@ https://lordlolqdh.github.io/void-browser/
 
 ### VOID
 
-**Privat entwickelt. Für das Web gebaut.**
+**Privat entwickelt. Für das Web gebaut.**  
+
+**© 2026 LordLOLQDH — VOID Browser**
 
 </div>
